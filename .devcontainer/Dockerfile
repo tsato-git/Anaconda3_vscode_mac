@@ -15,3 +15,19 @@ RUN if [ -f "/tmp/conda-tmp/environment.yml" ]; then umask 0002 && /opt/conda/bi
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
+
+RUN apt-get update && apt-get install -yq \
+    gcc \
+    mecab \
+    mecab-ipadic-utf8 \
+    libmecab-dev \
+    fonts-ipafont-gothic \
+    libgl1-mesa-dev \
+    ffmpeg && \
+    ln -s /etc/mecabrc /usr/local/etc/mecabrc
+
+WORKDIR /home/vscode
+
+COPY ../requirements.txt requirements.txt
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
