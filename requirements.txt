@@ -1,5 +1,12 @@
 scikit-learn
 plotly
 mecab-python3
-wordcloud
 japanize-matplotlib
+# wordcloud
+imblearn
+librosa
+moviepy
+opencv-python
+python-pptx
+python-docx
+pdfminer.six
