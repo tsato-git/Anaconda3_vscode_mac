@@ -10,3 +10,7 @@ opencv-python
 python-pptx
 python-docx
 pdfminer.six
+jupyterlab-language-pack-ja-JP
+pandas-profiling
+pixiedust
+

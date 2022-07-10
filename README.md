@@ -1,5 +1,5 @@
 ## Anaconda3_vscode_mac
-Python実習用の環境構築（Docker）
+Python実習用の環境構築（Docker+VSCode）
 
 ### Python実習用の環境構築（Mac）
 
